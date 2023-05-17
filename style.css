@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+  }
+.navbar{
+  display: block;
+  text-align: center;
+  animation: openy 0.7s ease;
+  background: white;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.107);
+  border-radius: 15px;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.navbar a{
+  display: inline-block;
+  text-decoration: none;
+  margin: 5px;
+  color: rgb(57, 56, 56);
+  transition: .3s;
+}
+.navbar a:hover{
+  transform: translateY(-4px);
+  color: black;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.193);
+}
+.title{
+  text-align: center;
+  font-size: 25px;
+}
+.blockinfo{
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.178);
+  border-radius: 15px;
+  padding: 15px;
+  margin-left: 15px;
+  width: 410px;
+  font-size: 20px;
+  animation: openscale 0.7s ease;
+}
+p{
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.178);
+  border-radius: 15px;
+  padding: 15px;
+  margin-left: 20px;
+  width: 440px;
+  margin-right: 20px;
+  font-size: 20px;
+  animation: openscale 0.7s ease;
+}
+.stretching{
+  float: right;
+  margin-top: -275px;
+}
+.power{
+  float: right;
+  margin-top: -305px;
+}
+.swimming{
+  float: right;
+  margin-top: -245px;
+}
+img{
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-top: 10px;
+  margin-right: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.178);
+  border-radius: 10px;
+}
+@keyframes openscale {
+  100%{transform: scaleX(1)}
+  0%{transform: scaleX(0)}
+}
+@keyframes openy {
+  0%{transform: translateY(-100px)}
+  100%{transform: translateY(0px)}
+}
